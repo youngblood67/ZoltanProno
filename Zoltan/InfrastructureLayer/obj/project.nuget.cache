@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "pDxGHQlAkJD3kRd1NIQ2wqN5WNWzFmtW/gM4/4z+8oLi8B2rcGn5bkqym8Z6uVOwd1mPpxsna6g4MYxBNJU0gw==",
+  "success": true,
+  "projectFilePath": "E:\\Git\\ZoltanProno\\Zoltan\\InfrastructureLayer\\InfrastructureLayer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Phil\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

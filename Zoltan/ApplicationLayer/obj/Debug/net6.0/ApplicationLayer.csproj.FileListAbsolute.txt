@@ -1,0 +1,12 @@
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.deps.json
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.dll
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\bin\Debug\net6.0\ApplicationLayer.pdb
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.AssemblyReference.cache
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.GeneratedMSBuildEditorConfig.editorconfig
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.AssemblyInfoInputs.cache
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.AssemblyInfo.cs
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.CoreCompileInputs.cache
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.dll
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\refint\ApplicationLayer.dll
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.pdb
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ref\ApplicationLayer.dll
