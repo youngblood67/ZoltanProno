@@ -1,8 +1,8 @@
 ﻿namespace DomainLayer.Entities
 {
-    public class Player : Entity
+    public class PlayerInformations : Entity
     {
-        public Player(int id, string firstName, string lastName, DateTime birthdate, string nationality, decimal weight = 0, decimal height = 0, bool injured = false) : base(id)
+        public PlayerInformations(int id, string firstName, string lastName, DateTime birthdate, string nationality, decimal weight = 0, decimal height = 0, bool injured = false) : base(id)
         {
             FirstName = firstName;
             LastName = lastName;

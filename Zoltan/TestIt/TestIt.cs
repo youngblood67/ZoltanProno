@@ -1,4 +1,6 @@
-﻿HttpClient httpClient = new HttpClient();
+﻿using DomainLayer.Entities;
+
+HttpClient httpClient = new HttpClient();
 
 string apiKey = "018c7ba508536c2b310be5eabf523dae";
 
@@ -34,6 +36,12 @@ var responseString = await response.Content.ReadAsStringAsync();
 //var matchResults = JsonConvert.DeserializeObject<IEnumerable<MatchResultDto>>(responseString);
 
 
-Console.WriteLine(responseString);
+//Console.WriteLine(responseString);
 
+MatchPlayed match = new MatchPlayed(1,DateTime.Now, new League(1,"Ligue 1","2022-23","France"),new DomainLayer.Team(1, "Strasbourg"),new DomainLayer.Team(2,"Rennes"),2,0,
+    new MatchTeamStatistics(), new MatchTeamStatistics());
+
+MatchToPlay match2 = new MatchToPlay(1, DateTime.Now, new League(1, "Ligue 1", "2022-23", "France"), new DomainLayer.Team(1, "Strasbourg"), new DomainLayer.Team(2, "Rennes"));
+
+Console.WriteLine(match2);
 Console.ReadLine();

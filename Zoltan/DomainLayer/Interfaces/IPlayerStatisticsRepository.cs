@@ -4,7 +4,7 @@ namespace DomainLayer.Repositories
 {
     public interface IPlayerStatisticsRepository
     {
-        public List<Player> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId,int teamId, int seasonId);
+        public Task<List<PlayerInformations>> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId,int teamId, int seasonId);
 
          
     }
