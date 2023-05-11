@@ -2,7 +2,7 @@
 
 namespace InfrastructureLayer.Models
 {
-    public class PlayerResponse
+    public class Response
     {
         [JsonProperty("player")]
         public Player Player { get; set; }

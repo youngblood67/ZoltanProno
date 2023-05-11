@@ -4,11 +4,6 @@ namespace InfrastructureLayer.Models
 {
     public class PlayerStatistics
     {
-        [JsonProperty("team")]
-        public Team Team { get; set; }
-
-        [JsonProperty("league")]
-        public League League { get; set; }
 
         [JsonProperty("games")]
         public Games Games { get; set; }
