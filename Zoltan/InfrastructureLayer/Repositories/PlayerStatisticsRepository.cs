@@ -15,9 +15,15 @@ namespace InfrastructureLayer.Repositories
             _httpClient = httpClient;
         }
 
-        public async Task<List<PlayerInformations>> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId, int teamId, int seasonId)
+        public List<PlayerInformations> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId, int teamId, int seasonId)
         {
             throw new NotImplementedException();
         }
+
+        public async Task<List<PlayerInformations>> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonIdAsync(int playerId, int teamId, int seasonId)
+        {
+            throw new NotImplementedException();
+        }
+       
     }
 }

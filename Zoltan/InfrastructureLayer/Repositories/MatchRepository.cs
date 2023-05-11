@@ -24,19 +24,19 @@ namespace InfrastructureLayer.Repositories
         }
 
         // Méthodes asynchrones
-        public Task<List<MatchPlayed>> GetLastMatchesAsync(int nbLast, int leagueId)
+        public async Task<List<MatchPlayed>> GetLastMatchesAsync(int nbLast, int leagueId)
         {
             throw new NotImplementedException();
         }
-        public Task<List<MatchToPlay>> GetNextMatchesAsync(int nbNext, int leagueId)
+        public async Task<List<MatchToPlay>> GetNextMatchesAsync(int nbNext, int leagueId)
         {
             throw new NotImplementedException();
         }
-        public Task<List<MatchPlayed>> GetLastMatchesByTeamIdAsync(int nbLast, int leagueId, int teamId)
+        public async Task<List<MatchPlayed>> GetLastMatchesByTeamIdAsync(int nbLast, int leagueId, int teamId)
         {
             throw new NotImplementedException();
         }
-        public Task<List<MatchToPlay>> GetNextMatchesByTeamIdAsync(int nbNext, int leagueId, int teamId)
+        public async Task<List<MatchToPlay>> GetNextMatchesByTeamIdAsync(int nbNext, int leagueId, int teamId)
         {
             throw new NotImplementedException();
         }

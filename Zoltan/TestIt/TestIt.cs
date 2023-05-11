@@ -45,3 +45,8 @@ MatchToPlay match2 = new MatchToPlay(1, DateTime.Now, new League(1, "Ligue 1", "
 
 Console.WriteLine(match2);
 Console.ReadLine();
+
+
+Team myTeam = new Team { Name = "My Team", Size = 10 };
+string json = JsonConvert.SerializeObject(myTeam);
+

@@ -4,7 +4,11 @@ namespace DomainLayer.Repositories
 {
     public interface IPlayerStatisticsRepository
     {
-        public Task<List<PlayerInformations>> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId,int teamId, int seasonId);
+        //Méthode synchrone :
+        public List<PlayerInformations> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(int playerId, int teamId, int seasonId);
+
+        //Méthode asynchrone :
+        public Task<List<PlayerInformations>> GetPlayerStatisticsByPlayerIdTeamIdAndSeasonIdAsync(int playerId,int teamId, int seasonId);
 
          
     }
