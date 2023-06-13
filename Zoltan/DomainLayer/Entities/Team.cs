@@ -1,16 +1,9 @@
-﻿using DomainLayer.Entities;
-
-namespace DomainLayer
+﻿namespace DomainLayer.Entities
 {
     public class Team : Entity
     {
-        public Team(int id, string name) : base(id)
-        {
-            Name = name;    
-        }
+        public string Name { get; set; }
 
-        public string Name { get; private set; } = String.Empty;
-
-   
+       
     }
 }

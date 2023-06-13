@@ -10,3 +10,6 @@ E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.dll
 E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\refint\ApplicationLayer.dll
 E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.pdb
 E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ref\ApplicationLayer.dll
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\bin\Debug\net6.0\DomainLayer.dll
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\bin\Debug\net6.0\DomainLayer.pdb
+E:\Git\ZoltanProno\Zoltan\ApplicationLayer\obj\Debug\net6.0\ApplicationLayer.csproj.CopyComplete

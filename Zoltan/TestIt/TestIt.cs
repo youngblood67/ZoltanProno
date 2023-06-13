@@ -1,22 +1,22 @@
 ﻿using DomainLayer.Entities;
 using InfrastructureLayer.Repositories;
 
-HttpClient httpClient = new HttpClient();
+//HttpClient httpClient = new HttpClient();
 
-string apiKey = "018c7ba508536c2b310be5eabf523dae";
+//string apiKey = "018c7ba508536c2b310be5eabf523dae";
 
-string apiBaseUrl = "https://v3.football.api-sports.io";
+//string apiBaseUrl = "https://v3.football.api-sports.io";
 
-string nextLeagueMatches = "/fixtures?league=61&next=10";
+//string nextLeagueMatches = "/fixtures?league=61&next=10";
 
 
-string playedMatchesSeason2022 = "/fixtures?league=61&season=2022&status=FT";
+//string playedMatchesSeason2022 = "/fixtures?league=61&season=2022&status=FT";
 
-string nextFRMatches = "/fixtures?league=61&next=1";
+//string nextFRMatches = "/fixtures?league=61&next=1";
 
-string lineUpByTeamId = "/players?team=95&season=2022"; //strasbourg : 95
+//string lineUpByTeamId = "/players?team=95&season=2022"; //strasbourg : 95
 
-string playerStatistics = "/players?id=21633&team=95&season=2022"; //&last=1";
+//string playerStatistics = "/players?id=21633&team=95&season=2022"; //&last=1";
 
 //https://v3.football.api-sports.io/fixtures?league=61&team=75&last=10
 //https://v3.football.api-sports.io/fixtures/lineups?fixture={FIXTURE_ID}&team={TEAM_ID} //compo pour un match
@@ -24,7 +24,7 @@ string playerStatistics = "/players?id=21633&team=95&season=2022"; //&last=1";
 
 
 
-string url = apiBaseUrl + playerStatistics;
+//string url = apiBaseUrl + playerStatistics;
 
 //var request = new HttpRequestMessage(HttpMethod.Get, url);
 //request.Headers.Add("x-rapidapi-key", apiKey);
@@ -36,8 +36,18 @@ string url = apiBaseUrl + playerStatistics;
 
 //var matchResults = JsonConvert.DeserializeObject<IEnumerable<MatchResultDto>>(responseString);
 
-var playerStatRepo = new PlayerStatisticsRepository(httpClient);
-var response = playerStatRepo.GetPlayerStatisticsByPlayerIdTeamIdAndSeasonId(21633,95,2022);
+var playerStatRepo = new PlayerInformationsRepository();
+//var response = playerStatRepo.GetPlayerInformationsByPlayerIdTeamIdAndSeasonId(21633, 95, 2022);
+
+
+var matchInformationsRepo = new MatchInformationsRepository();
+//var response = matchInformationsRepo.GetLastMatchesByLeagueId(2, 61);
+
+//var response2 = matchInformationsRepo.GetNextMatchesByLeagueId(10, 61);
+
+//var response3 = matchInformationsRepo.GetNextMatchesByTeamId(1, 95);
+
+var response4 = matchInformationsRepo.GetLastMatchesByTeamId(10, 95);
 
 //Console.WriteLine(responseString);
 
