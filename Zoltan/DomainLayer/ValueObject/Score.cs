@@ -2,7 +2,7 @@
 {
     public abstract class Score
     {
-        public int HomeTeamScore { get; set; }
-        public int AwayTeamScore { get; set; }
+        public int? Home { get; set; }
+        public int? Away { get; set; }
     }
 }

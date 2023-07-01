@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 
 namespace InfrastructureLayer.Repositories
 {
+    //TODO: Factoriser le code : DRY
     public class MatchInformationsRepository : IMatchRepository
     {
         private const string ApiKey = "018c7ba508536c2b310be5eabf523dae";
@@ -28,13 +29,12 @@ namespace InfrastructureLayer.Repositories
                     var content = response.Content.ReadAsStringAsync().Result;
                     var query = JsonConvert.DeserializeObject<Query>(content);
 
-                    var matchesInformations = new List<MatchPlayed>();// MatchInformationsMapper.MapToMatchPlayedList(query);
+                    var matchesInformations = MatchInformationsMapper.MapToMatchPlayedList(query);
 
                     return matchesInformations;
                 }
                 else
                 {
-                    // Gérer les erreurs de la requête HTTP
                     throw new Exception($"Erreur de requête HTTP : {response.StatusCode}");
                 }
             }
@@ -56,20 +56,19 @@ namespace InfrastructureLayer.Repositories
                     var content = response.Content.ReadAsStringAsync().Result;
                     var query = JsonConvert.DeserializeObject<Query>(content);
 
-                    var matchesInformations = new List<MatchToPlay>();// MatchInformationsMapper.MapToMatchToPlayList(query);
+                    var matchesInformations = MatchInformationsMapper.MapToMatchToPlayList(query);
 
                     return matchesInformations;
                 }
                 else
                 {
-                    // Gérer les erreurs de la requête HTTP
                     throw new Exception($"Erreur de requête HTTP : {response.StatusCode}");
                 }
             }
         }
         public List<MatchPlayed> GetLastMatchesByTeamId(int nbLast, int teamId)
         {
-            string endpoint = $"{ApiBaseUrl}/fixtures?team={teamId}&last={nbLast}&";
+            string endpoint = $"{ApiBaseUrl}/fixtures?team={teamId}&last={nbLast}";
 
             using (HttpClient client = new HttpClient())
             {
@@ -90,7 +89,6 @@ namespace InfrastructureLayer.Repositories
                 }
                 else
                 {
-                    // Gérer les erreurs de la requête HTTP
                     throw new Exception($"Erreur de requête HTTP : {response.StatusCode}");
                 }
             }
@@ -112,13 +110,12 @@ namespace InfrastructureLayer.Repositories
                     var content = response.Content.ReadAsStringAsync().Result;
                     var query = JsonConvert.DeserializeObject<Query>(content);
 
-                    var matchesInformations = new List<MatchToPlay>();// MatchInformationsMapper.MapToMatchPlayedList(query);
+                    var matchesInformations =  MatchInformationsMapper.MapToMatchToPlayList(query);
 
                     return matchesInformations;
                 }
                 else
                 {
-                    // Gérer les erreurs de la requête HTTP
                     throw new Exception($"Erreur de requête HTTP : {response.StatusCode}");
                 }
             }

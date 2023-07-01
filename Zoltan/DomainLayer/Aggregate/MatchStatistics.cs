@@ -4,10 +4,10 @@ namespace DomainLayer.Aggregate
 {
     public class MatchStatistics
     {
-        HalfTimeScore HalfTimeScore { get; set; } = new HalfTimeScore();
-        FullTimeScore FullTimeScore { get; set; } = new FullTimeScore();
-        ExtraTimeScore ExtraTimeScore { get; set; } = new ExtraTimeScore();
-        PenaltyScore PenaltyScore { get; set; } = new PenaltyScore();
+        public HalfTimeScore HalfTimeScore { get; set; } = new HalfTimeScore();
+        public FullTimeScore FullTimeScore { get; set; } = new FullTimeScore();
+        public ExtraTimeScore ExtraTimeScore { get; set; } = new ExtraTimeScore();
+        public PenaltyScore PenaltyScore { get; set; } = new PenaltyScore();
 
     }
 }

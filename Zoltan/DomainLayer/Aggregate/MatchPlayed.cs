@@ -4,9 +4,9 @@ namespace DomainLayer.Aggregate
 {
     public class MatchPlayed : MatchInformations
     {
-        public int HomeScore { get; set; }
-        public int AwayScore { get; set; }
-        public MatchStatistics Statistics { get; set; }
+        public int? HomeScore { get; set; }
+        public int? AwayScore { get; set; }
+        public MatchStatistics Statistics { get; set; } = new MatchStatistics();    
    
 
         public override string ToString()

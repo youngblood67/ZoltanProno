@@ -5,7 +5,7 @@ namespace InfrastructureLayer.Models.PlayerInformations
     public class Query
     {
         [JsonProperty("response")]
-        public List<Response> Response { get; set; }
+        public List<Response> Response { get; set; } = new List<Response>();    
 
     }
 }

@@ -1,6 +1,13 @@
-﻿namespace InfrastructureLayer.Models.MatchInformations
+﻿using Newtonsoft.Json;
+
+namespace InfrastructureLayer.Models.MatchInformations
 {
-    public class Score
+    public abstract class Score
     {
+        [JsonProperty("home")]
+        public int? Home { get; set; }
+
+        [JsonProperty("away")]
+        public int? Away { get; set; }
     }
 }

@@ -7,6 +7,5 @@ namespace DomainLayer.Entities
     {
         public Team HomeTeam { get; set; } = new Team();
         public Team AwayTeam { get; set; } = new Team();
-        public MatchStatistics Statistics { get; set; } = new MatchStatistics();
     }
 }

@@ -14,7 +14,7 @@ namespace InfrastructureLayer.Models.PlayerInformations
         public string LastName { get; set; } = string.Empty;
 
         [JsonProperty("age")]
-        public int Age { get; set; }
+        public int? Age { get; set; }
 
         [JsonProperty("nationality")]
         public string Nationality { get; set; } = string.Empty;
@@ -26,7 +26,7 @@ namespace InfrastructureLayer.Models.PlayerInformations
         public string Weight { get; set; } = string.Empty;
 
         [JsonProperty("injured")]
-        public bool Injured { get; set; } 
+        public bool? Injured { get; set; } 
 
     }
 }

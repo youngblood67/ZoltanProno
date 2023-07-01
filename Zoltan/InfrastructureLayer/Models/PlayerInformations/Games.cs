@@ -14,10 +14,10 @@ namespace InfrastructureLayer.Models.PlayerInformations
         public int? Minutes { get; set; }
 
         [JsonProperty("position")]
-        public string Position { get; set; }
+        public string Position { get; set; } = string.Empty;
 
         [JsonProperty("rating")]
-        public string Rating { get; set; }
+        public string Rating { get; set; } = string.Empty;
 
         [JsonProperty("captain")]
         public bool? Captain { get; set; }
